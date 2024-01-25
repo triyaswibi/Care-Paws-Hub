@@ -1,4 +1,19 @@
 //test
+const listAnjing=[
+    {
+        nama: "Pasien 1",
+        imgUrl: "./img/download (1).jpg",
+        deskripsi: "Mencret",
+        isSick: true
+    },
+    {
+        nama: "Pasien 2",
+        imgUrl: "./img/images.jpg",
+        deskripsi: "Mencret",
+        isSick: true
+    }
+]
+
 function openTab(evt, animalType) {
     // Declare all variables
     let i, tabcontent, tablinks;
