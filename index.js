@@ -1,16 +1,28 @@
 //test
 const listAnjing=[
+    //status(sembuh,perawatan,darurat)
     {
         nama: "Pasien 1",
         imgUrl: "./img/download (1).jpg",
         deskripsi: "Mencret",
-        isSick: true
+        age:1,
+        gender:"male",
+        roomNumber:1,
+        status:"sembuh",
+        type:"anjing"
+        
+        
     },
     {
         nama: "Pasien 2",
         imgUrl: "./img/images.jpg",
         deskripsi: "Mencret",
-        isSick: true
+        age:1,
+        gender:"male",
+        roomNumber:1,
+        status:"sembuh",
+        type:"anjing"
+        
     }
 ]
 
@@ -32,16 +44,12 @@ function openTab(evt, animalType) {
     evt.currentTarget.className += " active";
   }
 
-// modal function
-function openPopup() {
-  modal = document.getElementById("modals");
-  modal.style.display = "block"
-}
-function closePopup() {
-    modal.style.display = 'none'
-}
-window.onclick = function(event) {
-    if (event.target==modal) {
-        modal.style.display = 'none'
-    }
-}
+  
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+

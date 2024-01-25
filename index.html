@@ -38,7 +38,7 @@
                             <p><button>Delete</button></p>
                         </div>
                         <div>
-                            <p><button>Add Anjing</button></p>
+                            <button class="btn" onclick="openForm()">Add Anjing</button>
                         </div>
                     </div>
                   </div>
@@ -64,7 +64,7 @@
                             <p><button>Delete</button></p>
                         </div>
                         <div>
-                            <p><button>Add Anjing</button></p>
+                            <p><button class="btn" onclick="openForm()">Add Kucing</button></p>
                         </div>
                     </div>
                   </div>
@@ -89,7 +89,7 @@
                             <p><button>Delete</button></p>
                         </div>
                         <div>
-                            <p><button>Add Anjing</button></p>
+                            <p><button class="btn" onclick="openForm()">Add Reptil</button></p>
                         </div>
                     </div>
                   </div>
@@ -114,13 +114,45 @@
                             <p><button>Delete</button></p>
                         </div>
                         <div>
-                            <p><button>Add Anjing</button></p>
+                            <p><button class="btn" onclick="openForm()">Add Dinosaurus</button></p>
                         </div>
                     </div>
+                  </div>
+
+                  <div class="form-popup" id="myForm">
+                    <form  class="form-container" >
+                      <h1>Data Hewan</h1>
+                  
+                      <label ><b>Nama</b></label>
+                      <input type="text">
+                  
+                      <label ><b>Penyakit</b></label>
+                      <input type="text" >
+
+                      <label ><b>Umur</b></label>
+                      <input type="text" >
+
+                      <label ><b>Jenis Kelamin</b></label>
+                      <select>
+                        <option class="Jenis Kelamin" value="Male">Male</option>
+                        <option class="Jenis Kelamin" value="Female">Female</option>
+                      </select>
+
+                      <label ><b>Status</b></label>
+                      <select>
+                        <option class="status" value="Sembuh">Sembuh</option>
+                        <option class="status" value="Perawatan">Perawatan</option>
+                        <option class="status" value="Darurat">Darurat</option>
+                      </select>
+                  
+                      <button  class="btn">Tambah</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Batal</button>
+                    </form>
                   </div>
                   
               </div>
         </div>
+        
 
     </main>
     
