@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
     <title>CarePaws Hub</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-primary">
-    <div class="container-fluid">
-        <a class="navbar-brand fw-bold">CarePaws Hub: Aplikasi Rawat Inap Hewan</a>
-    <img src="gambar.navbar.png"  
-    </div>
-
-    <div class="greeting-box">
-        <h1 class="greeting">Welcome to <span class="janjidoc">JanjiDok</span></h1>
-        <p class="janjidoc-desc">JanjiDok adalah sistem layanan antrian yang digunakan oleh rumah sakit JanjiDok.
-            Sekarang kamu dapat menunggu antrian pemeriksaan tanpa harus berada di rumah sakit secara langsung !.
-            Gunakan layanan kami dan tunggu giliran pemeriksaan dimanapun dan kapanpun</p>
-        <div class="ilustration">
-            <img src="book.png" alt="booking-illustration" class="book">
+    <main style="width: auto; height: 100vh">
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold">CarePaws: Perawatan Hewan</a>
         </div>
-    </div>
-</nav>
+         <div>
+           <div class="tab" style="display: flex; flex-direction: column;">
+                <div class="tab-btn">
+                    <button class="tablinks" onclick="openTab(event, 'Anjing')">Anjing</button>
+                    <button class="tablinks" onclick="openTab(event, 'Kucing')">Kucing</button>
+                    <button class="tablinks" onclick="openTab(event, 'Reptil')">Reptil</button>
+                    <button class="tablinks" onclick="openTab(event, 'Dinosaurus')">Dinosaurus</button>
+                </div>
+                
+                 <div id="Anjing" class="tabcontent">
+                    <h3>Anjing</h3>
+                  </div>
+                  <div id="Kucing" class="tabcontent">
+                    <h3>Kucing</h3>
+                  </div>
+                  
+                  <div id="Reptil" class="tabcontent">
+                    <h3>Reptil</h3>
+                  </div>
+
+                  <div id="Dinosaurus" class="tabcontent">
+                    <h3>Dinosaurus</h3>
+                  </div>
+
+                  
+                  
+              </div>
+        </div>
+
+    </main>
+    
 </body>
 </html>
