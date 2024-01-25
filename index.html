@@ -5,38 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-    <title>Care Paws Hub</title>
+    <title style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Care Paws Hub</title>
     <link rel="icon" href="./img/paw.png" type="image/x-icon">
-</head>
-    <body>
-        <nav class="bg-header">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold" style="font-style: normal;">Care Paws Hub</a>
-            </div> 
-            <div class="greeting-box">
-                <h1 class="greeting">Welcome to <span class="janjidoc">Care Paws</span></h1>
-                <p class="carepaw-desc">Saat memilih fasilitas medis untuk merawat hewan peliharaan Anda, pilihannya bisa sangat banyak dan perbedaan antara klinik dokter hewan dan rumah sakit hewan di Wichita bisa membingungkan. Rumah Sakit Hewan Cimarron memiliki jawaban yang Anda perlukan untuk menemukan dokter hewan di Wichita yang paling memenuhi kebutuhan hewan peliharaan Anda.</p>
-                <div class="ilustration">
-                    <img src="/img/paw.png" alt="data-illustration" class="paw">
-                </div>
-            </div>
-        </nav>
-    
-    <main style="width: auto; height: 100vh">
-      <nav class="navbar navbar-dark bg-primary">
+</head> 
+                              
+<body>
+    <nav class="bg-header">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold">CarePaws: Perawatan Hewan</a>
+            <a class="navbar-brand fw-bold" style="font-style: normal;">Care Paws Hub</a>
+        </div> 
+        <div class="greeting-box">
+            <h1 class="greeting">Welcome to <span class="janjidoc">Care Paws</span></h1>
+            <p class="carepaw-desc">Saat memilih fasilitas medis untuk merawat hewan peliharaan Anda, pilihannya bisa sangat banyak dan perbedaan antara klinik dokter hewan dan rumah sakit hewan di Wichita bisa membingungkan. Rumah Sakit Hewan Cimarron memiliki jawaban yang Anda perlukan untuk menemukan dokter hewan di Wichita yang paling memenuhi kebutuhan hewan peliharaan Anda.</p>
+            <div class="ilustration">
+                <img src="/img/paw.png" alt="data-illustration" class="paw">
+            </div>
         </div>
-         <div>
-           <div class="tab" style="display: flex; flex-direction: column;">
+    </nav>
+                                                             
+    <main style="width: auto; height: 100vh">
+        <div>
+            <div class="tab" style="display: flex; flex-direction: column;">
                 <div class="tab-btn">
                     <button class="tablinks" onclick="openTab(event, 'Anjing')">Anjing</button>
                     <button class="tablinks" onclick="openTab(event, 'Kucing')">Kucing</button>
                     <button class="tablinks" onclick="openTab(event, 'Reptil')">Reptil</button>
                     <button class="tablinks" onclick="openTab(event, 'Dinosaurus')">Dinosaurus</button>
                 </div>
-                
-                 <div id="Anjing" class="tabcontent">
+                  <div id="Anjing" class="tabcontent">
                     <h3>Anjing</h3>
                     <div class="card">
                         <div>
@@ -56,10 +52,11 @@
                             <p><button>Delete</button></p>
                         </div>
                         <div>
-                            <button class="btn" onclick="openForm()">Add Anjing</button>
+                            <p><button class="btn" onclick="openForm()">Add Anjing</button></p>
                         </div>
                     </div>
                   </div>
+                  
                     
                   
                   <div id="Kucing" class="tabcontent">
@@ -132,7 +129,7 @@
                             <p><button>Delete</button></p>
                         </div>
                         <div>
-                            <p><button class="btn" onclick="openForm()">Add Dinosaurus</button></p>
+                          <p><button class="btn" onclick="openForm()">Add Dinosaurus</button></p>
                         </div>
                     </div>
                   </div>
@@ -167,12 +164,9 @@
                       <button type="button" class="btn cancel" onclick="closeForm()">Batal</button>
                     </form>
                   </div>
-
-                  
                   
               </div>
         </div>
-        
 
     </main>
     
