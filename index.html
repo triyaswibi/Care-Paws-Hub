@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-    <title>CarePaws Hub</title>
+    <title>Care Paws Hub</title>
+    <link rel="icon" href="./img/paw.png" type="image/x-icon">
 </head>
-<body>
+    <body>
+        <nav class="bg-header">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" style="font-style: normal;">Care Paws Hub</a>
+            </div> 
+            <div class="greeting-box">
+                <h1 class="greeting">Welcome to <span class="janjidoc">Care Paws</span></h1>
+                <p class="carepaw-desc">Saat memilih fasilitas medis untuk merawat hewan peliharaan Anda, pilihannya bisa sangat banyak dan perbedaan antara klinik dokter hewan dan rumah sakit hewan di Wichita bisa membingungkan. Rumah Sakit Hewan Cimarron memiliki jawaban yang Anda perlukan untuk menemukan dokter hewan di Wichita yang paling memenuhi kebutuhan hewan peliharaan Anda.</p>
+                <div class="ilustration">
+                    <img src="/img/paw.png" alt="data-illustration" class="paw">
+                </div>
+            </div>
+        </nav>
+    
     <main style="width: auto; height: 100vh">
       <nav class="navbar navbar-dark bg-primary">
         <div class="container-fluid">
@@ -24,25 +38,152 @@
                 
                  <div id="Anjing" class="tabcontent">
                     <h3>Anjing</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <button class="btn" onclick="openForm()">Add Anjing</button>
+                        </div>
+                    </div>
                   </div>
+                    
+                  
                   <div id="Kucing" class="tabcontent">
                     <h3>Kucing</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button class="btn" onclick="openForm()">Add Kucing</button></p>
+                        </div>
+                    </div>
                   </div>
                   
                   <div id="Reptil" class="tabcontent">
                     <h3>Reptil</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button class="btn" onclick="openForm()">Add Reptil</button></p>
+                        </div>
+                    </div>
                   </div>
 
                   <div id="Dinosaurus" class="tabcontent">
                     <h3>Dinosaurus</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button class="btn" onclick="openForm()">Add Dinosaurus</button></p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="form-popup" id="myForm">
+                    <form  class="form-container" >
+                      <h1>Data Hewan</h1>
+                  
+                      <label ><b>Nama</b></label>
+                      <input type="text">
+                  
+                      <label ><b>Penyakit</b></label>
+                      <input type="text" >
+
+                      <label ><b>Umur</b></label>
+                      <input type="text" >
+
+                      <label ><b>Jenis Kelamin</b></label>
+                      <select>
+                        <option class="Jenis Kelamin" value="Male">Male</option>
+                        <option class="Jenis Kelamin" value="Female">Female</option>
+                      </select>
+
+                      <label ><b>Status</b></label>
+                      <select>
+                        <option class="status" value="Sembuh">Sembuh</option>
+                        <option class="status" value="Perawatan">Perawatan</option>
+                        <option class="status" value="Darurat">Darurat</option>
+                      </select>
+                  
+                      <button  class="btn">Tambah</button>
+                      <button type="button" class="btn cancel" onclick="closeForm()">Batal</button>
+                    </form>
                   </div>
 
                   
                   
               </div>
         </div>
+        
 
     </main>
+    
+    <button id="myBtn" onclick=openPopup()>Tambah data</button>
+    <div id="modals" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick=closePopup()>&times;</span>
+            <p>kontent dan input</p>
+        </div>
+    </div>
+
     
 </body>
 </html>
