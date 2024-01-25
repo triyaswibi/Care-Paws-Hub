@@ -1,1 +1,42 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main style="width: auto; height: 100vh">
+        <div>
+            <div class="tab" style="display: flex; flex-direction: column;">
+                <div class="tab-btn">
+                    <button class="tablinks" onclick="openTab(event, 'Anjing')">Anjing</button>
+                    <button class="tablinks" onclick="openTab(event, 'Kucing')">Kucing</button>
+                    <button class="tablinks" onclick="openTab(event, 'Reptil')">Reptil</button>
+                    <button class="tablinks" onclick="openTab(event, 'Dinosaurus')">Dinosaurus</button>
+                </div>
+                  <div id="Anjing" class="tabcontent">
+                    <h3>Anjing</h3>
+                  </div>
+                  
+                  <div id="Kucing" class="tabcontent">
+                    <h3>Kucing</h3>
+                  </div>
+                  
+                  <div id="Reptil" class="tabcontent">
+                    <h3>Reptil</h3>
+                  </div>
+
+                  <div id="Dinosaurus" class="tabcontent">
+                    <h3>Dinosaurus</h3>
+                  </div>
+                  
+              </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>
