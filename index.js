@@ -1,16 +1,28 @@
 //test
 const listAnjing=[
+    //status(sembuh,perawatan,darurat)
     {
         nama: "Pasien 1",
         imgUrl: "./img/download (1).jpg",
         deskripsi: "Mencret",
-        isSick: true
+        age:1,
+        gender:"male",
+        roomNumber:1,
+        status:"sembuh",
+        type:"anjing"
+        
+        
     },
     {
         nama: "Pasien 2",
         imgUrl: "./img/images.jpg",
         deskripsi: "Mencret",
-        isSick: true
+        age:1,
+        gender:"male",
+        roomNumber:1,
+        status:"sembuh",
+        type:"anjing"
+        
     }
 ]
 
@@ -33,4 +45,12 @@ function openTab(evt, animalType) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(animalType).style.display = "block";
     evt.currentTarget.className += " active";
+  }
+  
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
   }
