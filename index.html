@@ -3,26 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarePaws Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Care Paws Hub</title>
     <link rel="icon" href="./img/paw.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
+    <main style="width: auto; height: 100vh">
+        <div>
+            <div class="tab" style="display: flex; flex-direction: column;">
+                <div class="tab-btn">
+                    <button class="tablinks" onclick="openTab(event, 'Anjing')">Anjing</button>
+                    <button class="tablinks" onclick="openTab(event, 'Kucing')">Kucing</button>
+                    <button class="tablinks" onclick="openTab(event, 'Reptil')">Reptil</button>
+                    <button class="tablinks" onclick="openTab(event, 'Dinosaurus')">Dinosaurus</button>
+                </div>
+                  <div id="Anjing" class="tabcontent">
+                    <h3>Anjing</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button>Add Anjing</button></p>
+                        </div>
+                    </div>
+                  </div>
+                    
+                  
+                  <div id="Kucing" class="tabcontent">
+                    <h3>Kucing</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button>Add Anjing</button></p>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div id="Reptil" class="tabcontent">
+                    <h3>Reptil</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button>Add Anjing</button></p>
+                        </div>
+                    </div>
+                  </div>
 
-    </nav>
+                  <div id="Dinosaurus" class="tabcontent">
+                    <h3>Dinosaurus</h3>
+                    <div class="card">
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <img src="./img/download (1).jpg" alt="Denim Jeans" style="width:100%">
+                            <h1>Pasien 1</h1>
+                            <p class="price">Sakit</p>
+                            <p>.......</p>
+                            <p><button>Update</button></p>
+                            <p><button>Delete</button></p>
+                        </div>
+                        <div>
+                            <p><button>Add Anjing</button></p>
+                        </div>
+                    </div>
+                  </div>
+                  
+              </div>
+        </div>
 
-    <div>
-        <nav>
-            <div>
-                <button>Anjing</button>
-            </div>
-            <div>
-                <button>Kucing</button>
-            </div>
-            <div>
-                <button>Dino</button>
-            </div>
-        </nav>
-    </div>
+    </main>
+    
 </body>
 </html>
