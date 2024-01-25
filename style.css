@@ -60,6 +60,7 @@
     opacity: 0.7;
   }
 
+
   /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -116,4 +117,5 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
 
