@@ -120,7 +120,7 @@ function openTab(evt, animalType) {
 
   document.getElementById(animalType).style.display = "block";
   evt.currentTarget.className += " active";
-  let listHewan=[];
+  let listHewan;
   if(animalType==="Dog"){
     listHewan=listAnjing;
   }else if(animalType==="Cat"){
